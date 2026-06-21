@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-black text-zinc-300 font-sans antialiased selection:bg-indigo-600/40 selection:text-white overflow-x-hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Space Grotesk", sans-serif;
+    @apply text-white tracking-tight;
+  }
+}
+
+/* Custom modern scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(9, 9, 11, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(63, 63, 70, 0.4);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 102, 241, 0.6);
+}
+
+/* Premium background grid overlay */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+}
+
+/* Glowing orb animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-20px) scale(1.05); }
+}
+
+@keyframes float-reverse {
+  0%, 100% { transform: translateY(0px) scale(1.05); }
+  50% { transform: translateY(20px) scale(1); }
+}
+
+.animate-float-1 {
+  animation: float 12s ease-in-out infinite;
+}
+
+.animate-float-2 {
+  animation: float-reverse 16s ease-in-out infinite;
+}
+
+/* Custom glassy card blur */
+.glass-panel {
+  @apply backdrop-blur-md bg-zinc-900/45 border border-zinc-800/80 hover:border-zinc-700/60 transition-all duration-300;
+}
+
+.glass-panel-interactive {
+  @apply glass-panel hover:bg-zinc-900/60 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-indigo-500/5;
+}
+
+/* Timeline dot animation */
+@keyframes pulse-ring {
+  0% { transform: scale(0.65); opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { transform: scale(1.3); opacity: 0; }
+}
+
+.pulse-dot::before {
+  content: '';
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(99, 102, 241);
+  animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
