@@ -14,7 +14,7 @@ export default function Navbar({ activeSection }) {
 
   return (
     <nav className="sticky top-0 z-50 backdrop-blur-md bg-black/75 border-b border-zinc-900/80 w-full px-6 md:px-12 py-4">
-      <div className="max-w-6xl mx-auto flex justify-between items-center">
+      <div className="max-w-7xl xl:max-w-[1360px] mx-auto flex justify-between items-center">
         {/* Brand */}
         <div className="flex items-center gap-2 font-mono text-indigo-400 font-bold tracking-tight text-base">
           <Terminal size={18} className="animate-pulse" />

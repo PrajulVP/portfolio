@@ -1,5 +1,5 @@
 import React from 'react';
-import { Briefcase, Calendar, Building2 } from 'lucide-react';
+import { Calendar, Building2 } from 'lucide-react';
 
 export default function Experience() {
   const jobs = [
@@ -10,10 +10,8 @@ export default function Experience() {
       period: "July 2025 – Present",
       isCurrent: true,
       points: [
-        "Led the architectural development and code refactoring of a multi-role pharmaceutical delivery application, improving response times and data consistency.",
-        "Integrated Swagger API endpoints to provide clean, self-documenting APIs for mobile apps and external modules.",
-        "Created optimized SQL schema structures and backend workflows, boosting search queries speed by over 30%.",
-        "Configured robust CI/CD pipelines to automate testing and release, cutting deployment downtime by 40%."
+        "Web Application Development: Led development of client-facing Laravel/CodeIgniter applications, engineering a pharmaceutical delivery platform with Swagger APIs and building the Edusoft ERP system with integrated eSSL biometric attendance and examination workflows.",
+        "Code Quality & Collaboration: Delivered scalable, reusable code using Git and Jira, while streamlining deployments through CI/CD pipelines to consistently meet deadlines."
       ]
     },
     {
@@ -23,9 +21,9 @@ export default function Experience() {
       period: "Mar 2025 – Jun 2025",
       isCurrent: false,
       points: [
-        "Administered enterprise local networking infrastructure and supervised Sophos firewall logs to ensure secure connections.",
-        "Troubleshot hardware and system bugs for corporate office personnel, maintaining 99% uptime of employee workstations.",
-        "Maintained network logs, security systems, and CCTV systems following corporate compliance standards."
+        "Gained hands-on experience in IT support, troubleshooting, and system maintenance.",
+        "Collaborated with the IT team and involved in daily IT administrative tasks and learned to work in a structured corporate environment.",
+        "Assisted in monitoring network infrastructure, including firewall logs and CCTV systems."
       ]
     },
     {
@@ -35,8 +33,8 @@ export default function Experience() {
       period: "Sep 2024 – Dec 2024",
       isCurrent: false,
       points: [
-        "Constructed scalable CRUD modules and database tables using PHP Laravel and CodeIgniter structures.",
-        "Built responsive user interfaces and integrated user authentication, secure cookie session controls, and form validation filters."
+        "Built CRUD modules and integrated MySQL databases using PHP, Laravel, and CodeIgniter.",
+        "Implemented user authentication protocols, form validations, and internal tools."
       ]
     }
   ];
